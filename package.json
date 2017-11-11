@@ -1,0 +1,15 @@
+{
+  "name": "weatherfetching",
+  "version": "1.0.0",
+  "description": "Fetches weather of given city",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sergey.suslov <dagerok22@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "express": "latest",
+    "superagent": "latest"
+  }
+}
