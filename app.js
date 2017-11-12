@@ -1,7 +1,7 @@
-var express = require('express');
-var app = express();
-var weatherRouter = require('./app/router');
+const express = require("express");
+const app = express();
+const weatherRouter = require("./app/router");
 
-app.use('/', weatherRouter.router);
+app.use("/", weatherRouter.router);
 
 app.listen(3000);

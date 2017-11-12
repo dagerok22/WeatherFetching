@@ -1,13 +1,14 @@
-var express = require('express');
-var router = express.Router();
-var weather = require('./weather/weatherFetcher');
+const express = require("express");
+const router = express.Router();
+const weather = require("./weather/weatherFetcher");
+const {rootPath,} = require("../config");
 
-router.get('/', (request, response) => {
-    response.sendfile('public/index.html');
+router.get("/", (request, response) => {
+    response.sendFile(rootPath + "/public/index.html");
 });
 
-router.get('/:city', weather.sendWeatherOfChosenCity);
+router.get("/:city", weather.sendWeatherOfChosenCity);
 
 module.exports = {
-    router
+    router,
 };
