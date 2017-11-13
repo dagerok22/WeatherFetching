@@ -12,5 +12,8 @@
   "dependencies": {
     "express": "latest",
     "superagent": "latest"
+  },
+  "devDependencies": {
+    "mocha": "^4.0.1"
   }
 }
